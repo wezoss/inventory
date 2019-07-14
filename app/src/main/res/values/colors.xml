@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDarker">#141414</color>
+    <color name="colorAccent">#008577</color>
+    
+    <!--item view-->
+    <color name="top_priority">#141414</color>
+    <color name="low_priority">#707070</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="isolator">#ddd</color>
+    <color name="light_isolator">#E7E7E7</color>
+    <color name="edittext_active">#F0FFFC</color>
+    <color name="edittext_error_background">#FFEDED</color>
+    <color name="edittext_error_stroke">#EC2525</color>
+
+</resources>

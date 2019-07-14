@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsActivity"
+    android:orientation="vertical"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/double_image_height"
+        android:scaleType="centerCrop"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/high_margin"
+           >
+
+        <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:textColor="@color/top_priority"
+        android:textSize="@dimen/common_font_size"
+        android:layout_marginBottom="@dimen/low_margin"
+        tools:text="Product Name Lorem Ipsum lorem ipsum lorem epsum" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="50$ "
+        android:layout_marginBottom="@dimen/low_margin"
+        android:textColor="@color/top_priority"
+        android:textSize="@dimen/common_font_size"
+        />
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/light_isolator"
+                android:layout_marginBottom="@dimen/low_round_corner"
+                app:elevation="@dimen/low_round_corner"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/high_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/top_priority"
+                android:textSize="20sp"
+                android:layout_marginBottom="@dimen/low_margin"
+
+                />
+            <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="The library helps you create a cache of your app's data on a device that's running your app. This cache, which serves as your app's single source of truth, allows users to view a consistent copy of key information within your app, regardless of whether users have an internet connection."
+        android:textColor="@color/low_priority"
+        android:textSize="@dimen/common_font_size"
+        android:layout_marginBottom="@dimen/low_margin"
+
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDarker"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/high_margin"
+        >
+        <ImageView
+            android:id="@+id/increase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add_white_24dp"
+            android:padding="@dimen/low_margin"
+            android:background="@drawable/round_bg_style"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="88"
+
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available"
+            android:textSize="@dimen/low_font_size"
+          />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/decrease"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_bg_style"
+            android:src="@drawable/ic_remove_white_24dp"
+            android:padding="@dimen/low_margin"
+            />
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryDarker"
+
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+   >
+        <Button
+            android:id="@+id/order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_bg_style"
+            android:textColor="@color/white"
+            android:text="@string/order"
+            android:layout_margin="@dimen/high_margin"
+            android:textSize="@dimen/common_font_size"
+            />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_style"
+            android:textColor="@color/colorPrimaryDarker"
+            android:text="@string/delete"
+            android:layout_margin="@dimen/high_margin"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

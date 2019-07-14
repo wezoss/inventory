@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_width">170dp</dimen>
+    <dimen name="view_height">220dp</dimen>
+    <dimen name="camera_bg_width">40dp</dimen>
+    <dimen name="camera_bg_height">25dp</dimen>
+    <dimen name="high_margin">16dp</dimen>
+    <dimen name="low_margin">8dp</dimen>
+
+    <dimen name="image_height">120dp</dimen>
+    <dimen name="list_image_height">100dp</dimen>
+    <dimen name="double_image_height">200dp</dimen>
+    <dimen name="image_width">140dp </dimen>
+
+    <dimen name="common_font_size">15sp</dimen>
+    <dimen name="low_font_size">10sp</dimen>
+
+    <dimen name="low_round_corner">4dp</dimen>
+    <dimen name="stroke_size">1dp</dimen>
+</resources>
